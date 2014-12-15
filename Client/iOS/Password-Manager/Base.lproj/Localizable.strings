@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Password-Manager
+
+  Created by Mani on 15.12.14.
+  Copyright (c) 2014 Mani. All rights reserved.
+*/
+
+"ALERTVIEW_ERROR_TITLE" = "Error";
+
+"INVALID_SERVER_OR_EMAIL" = "The entered server or email address is invalid!";

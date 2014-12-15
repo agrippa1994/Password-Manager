@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3C6C98AC1A3F6CB700C8968C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */; };
-		3C6C98AE1A3F6CB700C8968C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C98AD1A3F6CB700C8968C /* ViewController.swift */; };
 		3C6C98B11A3F6CB700C8968C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C98AF1A3F6CB700C8968C /* Main.storyboard */; };
 		3C6C98B31A3F6CB800C8968C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C98B21A3F6CB800C8968C /* Images.xcassets */; };
 		3C6C98B61A3F6CB800C8968C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C98B41A3F6CB800C8968C /* LaunchScreen.xib */; };
@@ -141,13 +140,16 @@
 		3C6C9A541A3F6E9E00C8968C /* Cryptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A531A3F6E9E00C8968C /* Cryptor.mm */; };
 		3C6C9A5A1A3F712400C8968C /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A591A3F712400C8968C /* SRWebSocket.m */; };
 		3C6C9A5C1A3F719000C8968C /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6C9A5B1A3F719000C8968C /* libicucore.dylib */; };
+		3C6C9A5E1A3F730F00C8968C /* ServerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A5D1A3F730F00C8968C /* ServerListTableViewController.swift */; };
+		3C6C9A601A3F796C00C8968C /* AddServerEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */; };
+		3C6C9A631A3F7F6E00C8968C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C9A651A3F7F6E00C8968C /* Localizable.strings */; };
+		3C6C9A671A3F7FC600C8968C /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A661A3F7FC600C8968C /* Localize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C6C98A61A3F6CB700C8968C /* Password-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6C98AA1A3F6CB700C8968C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C6C98AD1A3F6CB700C8968C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3C6C98B01A3F6CB700C8968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C6C98B21A3F6CB800C8968C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3C6C98B51A3F6CB800C8968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -418,6 +420,10 @@
 		3C6C9A581A3F712400C8968C /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		3C6C9A591A3F712400C8968C /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
 		3C6C9A5B1A3F719000C8968C /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		3C6C9A5D1A3F730F00C8968C /* ServerListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerListTableViewController.swift; sourceTree = "<group>"; };
+		3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServerEntryTableViewController.swift; sourceTree = "<group>"; };
+		3C6C9A641A3F7F6E00C8968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C6C9A661A3F7FC600C8968C /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,11 +465,14 @@
 				3C6C9A531A3F6E9E00C8968C /* Cryptor.mm */,
 				3C6C98CD1A3F6E7600C8968C /* cryptopp */,
 				3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */,
-				3C6C98AD1A3F6CB700C8968C /* ViewController.swift */,
+				3C6C9A5D1A3F730F00C8968C /* ServerListTableViewController.swift */,
+				3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */,
 				3C6C98AF1A3F6CB700C8968C /* Main.storyboard */,
 				3C6C98B41A3F6CB800C8968C /* LaunchScreen.xib */,
 				3C6C98B21A3F6CB800C8968C /* Images.xcassets */,
 				3C6C98A91A3F6CB700C8968C /* Supporting Files */,
+				3C6C9A651A3F7F6E00C8968C /* Localizable.strings */,
+				3C6C9A661A3F7FC600C8968C /* Localize.swift */,
 			);
 			path = "Password-Manager";
 			sourceTree = "<group>";
@@ -800,6 +809,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6C98B11A3F6CB700C8968C /* Main.storyboard in Resources */,
+				3C6C9A631A3F7F6E00C8968C /* Localizable.strings in Resources */,
 				3C6C98B61A3F6CB800C8968C /* LaunchScreen.xib in Resources */,
 				3C6C98B31A3F6CB800C8968C /* Images.xcassets in Resources */,
 			);
@@ -852,6 +862,7 @@
 				3C6C99F61A3F6E7700C8968C /* ecp.cpp in Sources */,
 				3C6C9A351A3F6E7700C8968C /* sha3.cpp in Sources */,
 				3C6C99DF1A3F6E7700C8968C /* blumshub.cpp in Sources */,
+				3C6C9A5E1A3F730F00C8968C /* ServerListTableViewController.swift in Sources */,
 				3C6C9A011A3F6E7700C8968C /* gf256.cpp in Sources */,
 				3C6C99DB1A3F6E7700C8968C /* base64.cpp in Sources */,
 				3C6C9A481A3F6E7700C8968C /* wait.cpp in Sources */,
@@ -869,6 +880,7 @@
 				3C6C9A151A3F6E7700C8968C /* modes.cpp in Sources */,
 				3C6C9A091A3F6E7700C8968C /* hrtimer.cpp in Sources */,
 				3C6C99D81A3F6E7700C8968C /* asn.cpp in Sources */,
+				3C6C9A601A3F796C00C8968C /* AddServerEntryTableViewController.swift in Sources */,
 				3C6C99DA1A3F6E7700C8968C /* base32.cpp in Sources */,
 				3C6C9A201A3F6E7700C8968C /* pssr.cpp in Sources */,
 				3C6C9A041A3F6E7700C8968C /* gfpcrypt.cpp in Sources */,
@@ -912,7 +924,6 @@
 				3C6C9A401A3F6E7700C8968C /* tea.cpp in Sources */,
 				3C6C99EA1A3F6E7700C8968C /* cryptlib_bds.cpp in Sources */,
 				3C6C9A541A3F6E9E00C8968C /* Cryptor.mm in Sources */,
-				3C6C98AE1A3F6CB700C8968C /* ViewController.swift in Sources */,
 				3C6C99F21A3F6E7700C8968C /* dsa.cpp in Sources */,
 				3C6C9A5A1A3F712400C8968C /* SRWebSocket.m in Sources */,
 				3C6C99F31A3F6E7700C8968C /* eax.cpp in Sources */,
@@ -931,6 +942,7 @@
 				3C6C9A0A1A3F6E7700C8968C /* ida.cpp in Sources */,
 				3C6C9A1B1A3F6E7700C8968C /* osrng.cpp in Sources */,
 				3C6C99FE1A3F6E7700C8968C /* fipsalgt.cpp in Sources */,
+				3C6C9A671A3F7FC600C8968C /* Localize.swift in Sources */,
 				3C6C9A181A3F6E7700C8968C /* nbtheory.cpp in Sources */,
 				3C6C9A331A3F6E7700C8968C /* serpent.cpp in Sources */,
 				3C6C9A221A3F6E7700C8968C /* queue.cpp in Sources */,
@@ -964,6 +976,14 @@
 				3C6C9A571A3F6F9700C8968C /* de */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		3C6C9A651A3F7F6E00C8968C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C6C9A641A3F7F6E00C8968C /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
