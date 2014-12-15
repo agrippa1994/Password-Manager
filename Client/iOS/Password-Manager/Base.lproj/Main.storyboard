@@ -9,12 +9,12 @@
         <scene sceneID="dnh-Kk-5tY">
             <objects>
                 <tableViewController id="hSe-rK-aIS" customClass="ServerListTableViewController" customModule="Password_Manager" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="22" sectionFooterHeight="22" id="1nK-Lg-IOD">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1nK-Lg-IOD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServerEntry" textLabel="Djw-hY-uzq" detailTextLabel="DGJ-k6-5Ag" style="IBUITableViewCellStyleSubtitle" id="T6g-QN-Fh8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ServerEntry" textLabel="Djw-hY-uzq" detailTextLabel="DGJ-k6-5Ag" style="IBUITableViewCellStyleSubtitle" id="T6g-QN-Fh8">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T6g-QN-Fh8" id="aUv-PT-XbA">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="1017" y="801"/>
         </scene>
-        <!--Add Server Entry Table View Controller-->
+        <!--Add Server-->
         <scene sceneID="wFA-sG-fwv">
             <objects>
                 <tableViewController id="dFK-Yh-HJ8" customClass="AddServerEntryTableViewController" customModule="Password_Manager" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,7 +63,7 @@
                         <sections>
                             <tableViewSection id="PEH-Pr-8mb">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="lsb-TK-GCw">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="lsb-TK-GCw">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lsb-TK-GCw" id="tV8-Zc-ydM">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -82,7 +82,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="DBv-S6-UCI">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="DBv-S6-UCI">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DBv-S6-UCI" id="WrB-hZ-I3S">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -109,7 +109,7 @@
                             <outlet property="delegate" destination="dFK-Yh-HJ8" id="dor-NU-psh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DV9-uZ-A9v">
+                    <navigationItem key="navigationItem" title="Add Server" id="DV9-uZ-A9v">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="rew-zv-pn0">
                             <connections>
                                 <action selector="onCancel:" destination="dFK-Yh-HJ8" id="d7U-0v-McN"/>

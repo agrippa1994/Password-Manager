@@ -415,7 +415,6 @@
 		3C6C99D11A3F6E7700C8968C /* zlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zlib.cpp; sourceTree = "<group>"; };
 		3C6C99D21A3F6E7700C8968C /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		3C6C9A531A3F6E9E00C8968C /* Cryptor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Cryptor.mm; sourceTree = "<group>"; };
-		3C6C9A561A3F6F9700C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		3C6C9A571A3F6F9700C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3C6C9A581A3F712400C8968C /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		3C6C9A591A3F712400C8968C /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
@@ -424,6 +423,8 @@
 		3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServerEntryTableViewController.swift; sourceTree = "<group>"; };
 		3C6C9A641A3F7F6E00C8968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C6C9A661A3F7FC600C8968C /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
+		3C6C9A681A3F8BA200C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3C6C9A721A3F8D8C00C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -792,6 +793,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 3C6C989D1A3F6CB700C8968C;
 			productRefGroup = 3C6C98A71A3F6CB700C8968C /* Products */;
@@ -964,7 +966,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C6C98B01A3F6CB700C8968C /* Base */,
-				3C6C9A561A3F6F9700C8968C /* de */,
+				3C6C9A721A3F8D8C00C8968C /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -982,6 +984,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C6C9A641A3F7F6E00C8968C /* Base */,
+				3C6C9A681A3F8BA200C8968C /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Server-Addresse"; ObjectID = "5m0-B3-0gy"; */
+"5m0-B3-0gy.placeholder" = "Server-Addresse";
+
+/* Class = "UINavigationItem"; title = "Server-Liste"; ObjectID = "BIj-Yp-lza"; */
+"BIj-Yp-lza.title" = "Server-Liste";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "DGJ-k6-5Ag"; */
+"DGJ-k6-5Ag.text" = "Subtitle";
+
+/* Class = "UINavigationItem"; title = "Server hinzufügen"; ObjectID = "DV9-uZ-A9v"; */
+"DV9-uZ-A9v.title" = "Server hinzufügen";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Djw-hY-uzq"; */
+"Djw-hY-uzq.text" = "Title";
+
+/* Class = "UITextField"; placeholder = "Email-Addresse"; ObjectID = "pd4-sw-Zv9"; */
+"pd4-sw-Zv9.placeholder" = "Email-Addresse";
