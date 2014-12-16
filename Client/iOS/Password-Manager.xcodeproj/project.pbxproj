@@ -144,6 +144,7 @@
 		3C6C9A601A3F796C00C8968C /* AddServerEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */; };
 		3C6C9A631A3F7F6E00C8968C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C9A651A3F7F6E00C8968C /* Localizable.strings */; };
 		3C6C9A671A3F7FC600C8968C /* Localize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C9A661A3F7FC600C8968C /* Localize.swift */; };
+		3CD0616E1A40B00400B6A41E /* EditServerEntryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD0616D1A40B00400B6A41E /* EditServerEntryTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -424,7 +425,8 @@
 		3C6C9A641A3F7F6E00C8968C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3C6C9A661A3F7FC600C8968C /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		3C6C9A681A3F8BA200C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		3C6C9A721A3F8D8C00C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3CD0616D1A40B00400B6A41E /* EditServerEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditServerEntryTableViewController.swift; sourceTree = "<group>"; };
+		3CD061721A40B92E00B6A41E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -468,6 +470,7 @@
 				3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */,
 				3C6C9A5D1A3F730F00C8968C /* ServerListTableViewController.swift */,
 				3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */,
+				3CD0616D1A40B00400B6A41E /* EditServerEntryTableViewController.swift */,
 				3C6C98AF1A3F6CB700C8968C /* Main.storyboard */,
 				3C6C98B41A3F6CB800C8968C /* LaunchScreen.xib */,
 				3C6C98B21A3F6CB800C8968C /* Images.xcassets */,
@@ -897,6 +900,7 @@
 				3C6C9A101A3F6E7700C8968C /* marss.cpp in Sources */,
 				3C6C9A051A3F6E7700C8968C /* gost.cpp in Sources */,
 				3C6C99F51A3F6E7700C8968C /* eccrypto.cpp in Sources */,
+				3CD0616E1A40B00400B6A41E /* EditServerEntryTableViewController.swift in Sources */,
 				3C6C9A3B1A3F6E7700C8968C /* socketft.cpp in Sources */,
 				3C6C9A061A3F6E7700C8968C /* gzip.cpp in Sources */,
 				3C6C9A3C1A3F6E7700C8968C /* sosemanuk.cpp in Sources */,
@@ -966,7 +970,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C6C98B01A3F6CB700C8968C /* Base */,
-				3C6C9A721A3F8D8C00C8968C /* de */,
+				3CD061721A40B92E00B6A41E /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

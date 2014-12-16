@@ -14,5 +14,14 @@
 /* Class = "UILabel"; text = "Title"; ObjectID = "Djw-hY-uzq"; */
 "Djw-hY-uzq.text" = "Title";
 
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "GR0-ZO-Ir5"; */
+"GR0-ZO-Ir5.placeholder" = "Email";
+
 /* Class = "UITextField"; placeholder = "Email-Addresse"; ObjectID = "pd4-sw-Zv9"; */
 "pd4-sw-Zv9.placeholder" = "Email-Addresse";
+
+/* Class = "UINavigationItem"; title = "Server-Eintrag bearbeiten"; ObjectID = "teZ-Z7-kRL"; */
+"teZ-Z7-kRL.title" = "Server-Eintrag bearbeiten";
+
+/* Class = "UITextField"; placeholder = "Server"; ObjectID = "uhY-Ur-ETm"; */
+"uhY-Ur-ETm.placeholder" = "Server";

@@ -9,13 +9,13 @@
 import UIKit
 
 @objc protocol AddServerEntryTableViewControllerDelegate
-{
+{    
     func didEnteredServerEntry(server: String, email: String)
     optional func didCancelAddServerEntry()
 }
 
 class AddServerEntryTableViewController: UITableViewController {
-
+    
     weak var delegate: AddServerEntryTableViewControllerDelegate?
     
     @IBOutlet var serverTextField: UITextField!

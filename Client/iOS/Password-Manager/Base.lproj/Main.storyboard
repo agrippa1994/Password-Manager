@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ServerEntry" textLabel="Djw-hY-uzq" detailTextLabel="DGJ-k6-5Ag" style="IBUITableViewCellStyleSubtitle" id="T6g-QN-Fh8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ServerEntry" editingAccessoryType="disclosureIndicator" textLabel="Djw-hY-uzq" detailTextLabel="DGJ-k6-5Ag" style="IBUITableViewCellStyleSubtitle" id="T6g-QN-Fh8">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="T6g-QN-Fh8" id="aUv-PT-XbA">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -47,6 +47,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="Bu9-ai-Jws" kind="presentation" identifier="EditServerEntry" id="1BM-PX-7Hc"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trf-tr-wPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,6 +178,102 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RA5-Yr-80c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1017" y="1511"/>
+        </scene>
+        <!--Edit Server-->
+        <scene sceneID="fi5-0d-Y4x">
+            <objects>
+                <tableViewController id="oWA-Qa-2c6" customClass="EditServerEntryTableViewController" customModule="Password_Manager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="c2s-X0-Ku4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="9iv-64-vWB">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="WN5-5v-JW7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WN5-5v-JW7" id="P07-qJ-5Pw">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Server" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-Ur-ETm">
+                                                    <rect key="frame" x="8" y="14" width="584" height="31"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uhY-Ur-ETm" firstAttribute="centerY" secondItem="P07-qJ-5Pw" secondAttribute="centerY" id="O85-9T-uso"/>
+                                                <constraint firstItem="uhY-Ur-ETm" firstAttribute="top" secondItem="P07-qJ-5Pw" secondAttribute="topMargin" constant="6" id="heD-G2-GTT"/>
+                                                <constraint firstItem="uhY-Ur-ETm" firstAttribute="leading" secondItem="P07-qJ-5Pw" secondAttribute="leadingMargin" id="k4r-QW-Wmv"/>
+                                                <constraint firstItem="uhY-Ur-ETm" firstAttribute="trailing" secondItem="P07-qJ-5Pw" secondAttribute="trailingMargin" id="m7h-Mj-mxN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="60" id="uDx-hr-tb4">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uDx-hr-tb4" id="PQK-ya-0Ly">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-ZO-Ir5">
+                                                    <rect key="frame" x="8" y="14" width="584" height="31"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="GR0-ZO-Ir5" firstAttribute="centerY" secondItem="PQK-ya-0Ly" secondAttribute="centerY" id="4g5-9M-8mt"/>
+                                                <constraint firstItem="GR0-ZO-Ir5" firstAttribute="top" secondItem="PQK-ya-0Ly" secondAttribute="topMargin" constant="6" id="7ix-9h-5km"/>
+                                                <constraint firstItem="GR0-ZO-Ir5" firstAttribute="leading" secondItem="PQK-ya-0Ly" secondAttribute="leadingMargin" id="Idv-be-gpD"/>
+                                                <constraint firstItem="GR0-ZO-Ir5" firstAttribute="trailing" secondItem="PQK-ya-0Ly" secondAttribute="trailingMargin" id="ND3-bb-EIQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="oWA-Qa-2c6" id="8CQ-mY-BGD"/>
+                            <outlet property="delegate" destination="oWA-Qa-2c6" id="vfQ-u7-giC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit Server" id="teZ-Z7-kRL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fjz-fT-RfG">
+                            <connections>
+                                <action selector="onCancel:" destination="oWA-Qa-2c6" id="oMb-KL-CPl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="nSk-YF-SiT">
+                            <connections>
+                                <action selector="onSave:" destination="oWA-Qa-2c6" id="sDo-UQ-1TP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="GR0-ZO-Ir5" id="bCm-uE-5m7"/>
+                        <outlet property="serverTextField" destination="uhY-Ur-ETm" id="K8V-hU-wjL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGW-pY-KcC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1828" y="2229"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6ug-Uj-2oV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bu9-ai-Jws" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OSA-h3-xd6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="oWA-Qa-2c6" kind="relationship" relationship="rootViewController" id="9Gi-8f-rFO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Plu-rA-DE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="2229"/>
         </scene>
     </scenes>
 </document>

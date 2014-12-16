@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ServerListTableViewController: UITableViewController, AddServerEntryTableViewControllerDelegate {
+class ServerListTableViewController: UITableViewController, AddServerEntryTableViewControllerDelegate, EditServerEntryTableViewControllerDelegate {
 
      var serverEntries: [(String, String)] {
         get {
@@ -32,20 +32,19 @@ class ServerListTableViewController: UITableViewController, AddServerEntryTableV
         set(newValue) {
             var entries = [[String : String]]()
             for value in newValue {
-                var entry = [String: String]()
-                entry["Server"] = value.0
-                entry["Email"] = value.1
-                entries.append(entry)
+                entries.append(["Server" : value.0, "Email" : value.1])
             }
             
             NSUserDefaults.standardUserDefaults().setObject(entries, forKey: "ServerEntries")
+            NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.tableView.allowsSelectionDuringEditing = true
     }
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -77,11 +76,17 @@ class ServerListTableViewController: UITableViewController, AddServerEntryTableV
         }
     }
 
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        if self.tableView.editing {
+            self.performSegueWithIdentifier("EditServerEntry", sender: tableView.cellForRowAtIndexPath(indexPath))
+        }
+    }
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
         var entry = serverEntries[fromIndexPath.row]
         
         serverEntries.removeAtIndex(fromIndexPath.row)
-        
         serverEntries.insert(entry, atIndex: toIndexPath.row)
     }
 
@@ -89,14 +94,19 @@ class ServerListTableViewController: UITableViewController, AddServerEntryTableV
         return true
     }
 
-
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == nil {
-            return
+        if segue.identifier == "AddServerEntry" {
+            ((segue.destinationViewController as UINavigationController).topViewController as AddServerEntryTableViewController).delegate = self
         }
         
-        if segue.identifier! == "AddServerEntry" {
-            ((segue.destinationViewController as UINavigationController).topViewController as AddServerEntryTableViewController).delegate = self
+        if segue.identifier == "EditServerEntry" {
+            if let cell = sender as? UITableViewCell {
+                let vc = ((segue.destinationViewController as UINavigationController).topViewController as EditServerEntryTableViewController)
+                vc.delegate = self
+                vc.serverText = cell.textLabel?.text
+                vc.emailText = cell.detailTextLabel?.text
+                vc.sender = cell
+            }
         }
     }
     
@@ -105,4 +115,14 @@ class ServerListTableViewController: UITableViewController, AddServerEntryTableV
         tableView.reloadData()
     }
 
+    func didEditServerEntry(sender: AnyObject?, server: String, email: String) {
+        if let cell = sender as? UITableViewCell {
+            let idx = self.tableView.indexPathForCell(cell)!.row
+            
+            serverEntries[idx].0 = server
+            serverEntries[idx].1 = email
+            
+            self.tableView.reloadData()
+        }
+    }
 }
