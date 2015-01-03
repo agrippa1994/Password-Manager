@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C174DE01A5885850091CE3F /* MainListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C174DDF1A5885850091CE3F /* MainListTableViewController.swift */; };
+		3C174DE21A588CB10091CE3F /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C174DE11A588CB10091CE3F /* Array.swift */; };
 		3C6C98AC1A3F6CB700C8968C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */; };
 		3C6C98B11A3F6CB700C8968C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C98AF1A3F6CB700C8968C /* Main.storyboard */; };
 		3C6C98B31A3F6CB800C8968C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C6C98B21A3F6CB800C8968C /* Images.xcassets */; };
@@ -148,6 +150,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C174DDF1A5885850091CE3F /* MainListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListTableViewController.swift; sourceTree = "<group>"; };
+		3C174DE11A588CB10091CE3F /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		3C174DE61A588EC60091CE3F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		3C6C98A61A3F6CB700C8968C /* Password-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Password-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6C98AA1A3F6CB700C8968C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C6C98AB1A3F6CB700C8968C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -426,7 +431,6 @@
 		3C6C9A661A3F7FC600C8968C /* Localize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localize.swift; sourceTree = "<group>"; };
 		3C6C9A681A3F8BA200C8968C /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3CD0616D1A40B00400B6A41E /* EditServerEntryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditServerEntryTableViewController.swift; sourceTree = "<group>"; };
-		3CD061721A40B92E00B6A41E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,12 +475,14 @@
 				3C6C9A5D1A3F730F00C8968C /* ServerListTableViewController.swift */,
 				3C6C9A5F1A3F796C00C8968C /* AddServerEntryTableViewController.swift */,
 				3CD0616D1A40B00400B6A41E /* EditServerEntryTableViewController.swift */,
+				3C174DDF1A5885850091CE3F /* MainListTableViewController.swift */,
 				3C6C98AF1A3F6CB700C8968C /* Main.storyboard */,
 				3C6C98B41A3F6CB800C8968C /* LaunchScreen.xib */,
 				3C6C98B21A3F6CB800C8968C /* Images.xcassets */,
 				3C6C98A91A3F6CB700C8968C /* Supporting Files */,
 				3C6C9A651A3F7F6E00C8968C /* Localizable.strings */,
 				3C6C9A661A3F7FC600C8968C /* Localize.swift */,
+				3C174DE11A588CB10091CE3F /* Array.swift */,
 			);
 			path = "Password-Manager";
 			sourceTree = "<group>";
@@ -863,6 +869,7 @@
 				3C6C9A3E1A3F6E7700C8968C /* squaretb.cpp in Sources */,
 				3C6C9A0E1A3F6E7700C8968C /* luc.cpp in Sources */,
 				3C6C99ED1A3F6E7700C8968C /* dessp.cpp in Sources */,
+				3C174DE21A588CB10091CE3F /* Array.swift in Sources */,
 				3C6C99F71A3F6E7700C8968C /* elgamal.cpp in Sources */,
 				3C6C99F61A3F6E7700C8968C /* ecp.cpp in Sources */,
 				3C6C9A351A3F6E7700C8968C /* sha3.cpp in Sources */,
@@ -901,6 +908,7 @@
 				3C6C9A051A3F6E7700C8968C /* gost.cpp in Sources */,
 				3C6C99F51A3F6E7700C8968C /* eccrypto.cpp in Sources */,
 				3CD0616E1A40B00400B6A41E /* EditServerEntryTableViewController.swift in Sources */,
+				3C174DE01A5885850091CE3F /* MainListTableViewController.swift in Sources */,
 				3C6C9A3B1A3F6E7700C8968C /* socketft.cpp in Sources */,
 				3C6C9A061A3F6E7700C8968C /* gzip.cpp in Sources */,
 				3C6C9A3C1A3F6E7700C8968C /* sosemanuk.cpp in Sources */,
@@ -970,7 +978,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C6C98B01A3F6CB700C8968C /* Base */,
-				3CD061721A40B92E00B6A41E /* de */,
+				3C174DE61A588EC60091CE3F /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

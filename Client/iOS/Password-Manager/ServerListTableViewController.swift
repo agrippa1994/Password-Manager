@@ -108,6 +108,10 @@ class ServerListTableViewController: UITableViewController, AddServerEntryTableV
                 vc.sender = cell
             }
         }
+        
+        if segue.identifier == "MainList" {
+            
+        }
     }
     
     func didEnteredServerEntry(server: String, email: String) {

@@ -7,3 +7,4 @@
 //
 
 #import "Cryptor.h"
+#import "SRWebSocket.h"
